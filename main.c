@@ -9,6 +9,8 @@
 #include <string.h>
 int main(void)
 {
+
+    
     /*Printing default set up for PWM Drawer*/
     char duty_display[50];
     char frequency_display[50];
@@ -127,9 +129,11 @@ for (int j=0;j<Toff;j++)
 
 
     set_column(0x40);   /*Starting at Y= 0*/
+    hglcd_displayString(6,Ton1);
+    
     hglcd_displayString(3,Toff1);
 
-    hglcd_displayString(6,Ton1);
+    
     
 
     while(1);
